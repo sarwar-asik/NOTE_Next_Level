@@ -1,0 +1,7 @@
+******** install node version  manager(nvm) *****
+        >> https://github.com/coreybutler/nvm-windows 
+        >> download expo file 
+        >> nvm --version (check nvm in terminal)
+        >> nvm --list (check node version)
+        >> use 16.17.0 (use this node version)
+        

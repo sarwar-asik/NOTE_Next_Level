@@ -1,0 +1,14 @@
+**************** setup typeScript ***********
+
+install typeScript >>
+     npm i -g  typeScript
+
+index.ts >>
+            const Name : string = "This is first TS File"
+            console.log(Name);
+terminal >> 
+            tsc ./index.ts
+
+
+
+
