@@ -6,8 +6,25 @@ install typeScript >>
 index.ts >>
             const Name : string = "This is first TS File"
             console.log(Name);
+
 terminal >> 
             tsc ./index.ts
+            tsc --init
+            npm init -y 
+            npm -i nodemon
+            npm i ts-node-dev --save-dev (for node envirnment without change ts )
+
+change "start" :"ts-node-dev --respawn --transpile-only index.ts.ts"  [in package.json]
+
+ ... create src folder ...
+    ... change in tscconfig.json >>
+        "rootDir": "./src",     
+
+
+ .... create dist folder ...
+     ...change in tscconfig.json >>>
+        "outDir": "./dist",         
+
 
 
 
