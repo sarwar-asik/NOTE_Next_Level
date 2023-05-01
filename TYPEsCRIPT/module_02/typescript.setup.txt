@@ -26,6 +26,11 @@ change "start" :"ts-node-dev --respawn --transpile-only index.ts.ts"  [in packag
         "outDir": "./dist",         
 
 
+terminal >>>>>>
+  npx ts-node-dev --respawn src/spread.default.ts
+  (for see console)
+
+
 
 
 
