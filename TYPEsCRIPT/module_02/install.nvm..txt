@@ -5,3 +5,4 @@
         >> nvm --list (check node version)
         >> use 16.17.0 (use this node version)
         
+        start typeScript : npx  ts-node-dev --respawn ./src/null.never.unknown.ts
