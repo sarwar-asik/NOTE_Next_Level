@@ -21,7 +21,7 @@ terminal >>
             tsc ./index.ts
 
               
-        start typeScript : npx  ts-node-dev --respawn ./src/null.never.unknown.ts
+        start typeScript : npx  ts-node-dev --respawn ./src/index.ts
 
 
 
