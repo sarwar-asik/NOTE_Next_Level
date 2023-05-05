@@ -21,6 +21,9 @@ tsc ./index.ts
 
         start typeScript : npx  ts-node-dev --respawn ./src/index.ts
 
+## Type or interface >>>
+string,object or {} ,[],boolean
+
 ## null | unknown | never type
 
 ## ?? (nulish coeslancing operaor ) >>
@@ -47,3 +50,8 @@ interface UserType2 extend UserType1{
      {title:"developer",role:"admin"}
  ]
  ** can change generic parameter number **
+## we can use generic interface ,function with multi paraMitre
+
+##  (keyof) use for multi type aggregation >>>
+
+type NewType =keyof PersonsType
