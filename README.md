@@ -39,3 +39,11 @@ type UserType1 ={name:string}
 interface UserType2 extend UserType1{
      age:number, country:string
 }
+
+## (generic types)  >>>
+ type GenericTypes<X,Y> = [X,Y]
+ const user3 :GenericTypes <string,{title:string,role:string}> = [
+     "Sonia",
+     {title:"developer",role:"admin"}
+ ]
+ ** can change generic parameter number **
