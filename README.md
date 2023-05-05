@@ -13,45 +13,52 @@
 install typeScript >>
 npm i -g typeScript
 
-index.ts >>
-const Name : string = "This is first TS File"
-console.log(Name);
-terminal >>
-tsc ./index.ts
+          index.ts >>
+          const Name : string = "This is first TS File"
+          console.log(Name);
+          terminal >>
+          tsc ./index.ts
 
         start typeScript : npx  ts-node-dev --respawn ./src/index.ts
 
 ## Type or interface >>>
-string,object or {} ,[],boolean
+
+     string,object or {} ,[],boolean
 
 ## null | unknown | never type
 
 ## ?? (nulish coeslancing operaor ) >>
 
-[ const userCheck1 = isAuthentic ?? "Not user"]
+     [ const userCheck1 = isAuthentic ?? "Not user"]
 
 ## ( as or <> ) >>>>>
- [roll as number]
- [<number> roll]
 
-## use (interface ) for object|function|Array type data 
-## use  (type ) for primetive type data  
+     [roll as number]
+     [<number> roll]
+
+## use (interface ) for object|function|Array type data
+
+## use (type ) for primetive type data
+
 ### Example >>>>>
-type UserType1 ={name:string}
 
-interface UserType2 extend UserType1{
+     type UserType1 ={name:string}
+
+     interface UserType2 extend UserType1{
      age:number, country:string
-}
+     }
 
-## (generic types)  >>>
- type GenericTypes<X,Y> = [X,Y]
- const user3 :GenericTypes <string,{title:string,role:string}> = [
+## (generic types) >>>
+
+     type GenericTypes<X,Y> = [X,Y]
+     const user3 :GenericTypes <string,{title:string,role:string}> = [
      "Sonia",
      {title:"developer",role:"admin"}
- ]
- ** can change generic parameter number **
+     ]
+** can change generic parameter number **
+
 ## we can use generic interface ,function with multi paraMitre
 
-##  (keyof) use for multi type aggregation >>>
+## (keyof) use for multi type aggregation >>>
 
 type NewType =keyof PersonsType
