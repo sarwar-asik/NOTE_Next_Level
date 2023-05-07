@@ -11,15 +11,33 @@
 ## **\*\***\*\*\*\***\*\*** setup typeScript \***\*\*\*\*\*\***
 
 install typeScript >>
-npm i -g typeScript
 
-          index.ts >>
+<!-- npm i -g typeScript -->
+
+         [] index.ts >>
           const Name : string = "This is first TS File"
           console.log(Name);
-          terminal >>
+         [] terminal >>
           tsc ./index.ts
 
-        start typeScript : npx  ts-node-dev --respawn ./src/index.ts
+         [] npm install typescript --save-dev  || npm i -g typescript
+         [] tsc --init
+         [] npm i ts-node-dev (for run tsc)
+     ** after change tsconfig.ts
+        [] tsc
+
+
+         []  "start": "ts-node-dev --respawn --transpile-only ./src/index.ts",
+
+### change in tsconfig.ts >>>
+
+         create src and dist folders >>
+          "rootDir": "./src",
+           "outDir": "./dist",
+
+## run folder
+
+    [] start typeScript : npx  ts-node-dev --respawn ./src/index.ts
 
 ## Type or interface >>>
 
@@ -55,6 +73,7 @@ npm i -g typeScript
      "Sonia",
      {title:"developer",role:"admin"}
      ]
+
 ** can change generic parameter number **
 
 ## we can use generic interface ,function with multi paraMitre
