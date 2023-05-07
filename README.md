@@ -77,7 +77,28 @@ install typeScript >>
 ** can change generic parameter number **
 
 ## we can use generic interface ,function with multi paraMitre
+           <T,K>
 
-## (keyof) use for multi type aggregation >>>
+## (key of) use for multi type aggregation >>>
 
-type NewType =keyof PersonsType
+          type NewType =key of PersonsType     
+### (is ) and (instanceof) in function and type
+### we can use (public ) and (private) (readonly (protector)) in class constructor
+     *** public is default
+     but private cannot access from out of class
+     read only can not redeclare value
+     protector like publice but have some special
+
+### (get) and (set)
+          class account {
+                 get balance2() {
+                     return this.balance;
+                 }
+               set deposit(amount: number) {
+               this.balance = this.balance + amount;
+               }
+          }
+
+          *** we can access any function without call by get and set
+          ** set must be a parametre
+          ** get must return a value
