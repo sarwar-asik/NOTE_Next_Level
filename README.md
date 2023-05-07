@@ -89,7 +89,7 @@ install typeScript >>
      read only can not redeclare value
      protector like publice but have some special
 
-### (get) and (set)
+### (get) and (set) (static)
           class account {
                  get balance2() {
                      return this.balance;
@@ -97,8 +97,12 @@ install typeScript >>
                set deposit(amount: number) {
                this.balance = this.balance + amount;
                }
+                static  decrement ():number{
+        return (Counter.counter--)
+    }
           }
 
           *** we can access any function without call by get and set
           ** set must be a parametre
           ** get must return a value
+          ** static can access by class name
