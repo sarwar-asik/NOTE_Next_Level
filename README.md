@@ -77,19 +77,24 @@ install typeScript >>
 ** can change generic parameter number **
 
 ## we can use generic interface ,function with multi paraMitre
+
            <T,K>
 
 ## (key of) use for multi type aggregation >>>
 
-          type NewType =key of PersonsType     
+          type NewType =key of PersonsType
+
 ### (is ) and (instanceof) in function and type
+
 ### we can use (public ) and (private) (readonly (protector)) in class constructor
+
      *** public is default
      but private cannot access from out of class
      read only can not redeclare value
      protector like publice but have some special
 
 ### (get) and (set) (static)
+
           class account {
                  get balance2() {
                      return this.balance;
@@ -106,6 +111,7 @@ install typeScript >>
           ** set must be a parametre
           ** get must return a value
           ** static can access by class name
+
 ### (implements) for using an interface in class
 
      interface IVehicle2{
@@ -121,18 +127,18 @@ install typeScript >>
           }
      }
 
-### (abstract)  using before a class 
+### (abstract) using before a class and using for definite shape
+
      abstract class VehicleClass {
           constructor(
                     public names: string,
            ) {}
-  
           abstract startEngine():void ;
-
           abstract  stopEngine(): void ;
           move(): void {
                 console.log("move purpose");
           }
+
 }
 
      class Car3 extends VehicleClass {
@@ -143,3 +149,5 @@ install typeScript >>
                console.log('this is stop engine')
           }
      }
+
+###
