@@ -106,3 +106,40 @@ install typeScript >>
           ** set must be a parametre
           ** get must return a value
           ** static can access by class name
+### (implements) for using an interface in class
+
+     interface IVehicle2{
+          startEngine():void;
+      }
+
+     class Vehicle implements IVehicle2{
+          test(){
+               console.log("")
+          }
+          startEngine():void{
+               console.log("this is startEngine function")
+          }
+     }
+
+### (abstract)  using before a class 
+     abstract class VehicleClass {
+          constructor(
+                    public names: string,
+           ) {}
+  
+          abstract startEngine():void ;
+
+          abstract  stopEngine(): void ;
+          move(): void {
+                console.log("move purpose");
+          }
+}
+
+     class Car3 extends VehicleClass {
+          startEngine(): void {
+               console.log('this is start engine');
+          }
+          stopEngine(): void {
+               console.log('this is stop engine')
+          }
+     }
